@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0c20" />
+      <stop offset="50%" stop-color="#15102a" />
+      <stop offset="100%" stop-color="#06020f" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8a2be2" />
+      <stop offset="50%" stop-color="#00ffff" />
+      <stop offset="100%" stop-color="#da70d6" />
+    </linearGradient>
+    <style>
+      @keyframes pulse {
+        0% { transform: scale(1); opacity: 0.2; }
+        50% { transform: scale(1.1); opacity: 0.6; }
+        100% { transform: scale(1); opacity: 0.2; }
+      }
+      @keyframes slide {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -40; }
+      }
+      .bg-grid {
+        stroke: #331f5c;
+        stroke-width: 0.5;
+        opacity: 0.3;
+      }
+      .node {
+        fill: #00ffff;
+        animation: pulse 4s infinite ease-in-out;
+      }
+      .node-delayed {
+        fill: #da70d6;
+        animation: pulse 4s infinite ease-in-out;
+        animation-delay: 2s;
+      }
+      .connection {
+        stroke: #8a2be2;
+        stroke-width: 1.5;
+        stroke-dasharray: 8 4;
+        animation: slide 2s linear infinite;
+      }
+      .title-text {
+        font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+        font-weight: 800;
+        font-size: 38px;
+        fill: url(#textGrad);
+        letter-spacing: 2px;
+      }
+      .subtitle-text {
+        font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        fill: #a0aec0;
+        letter-spacing: 4px;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#grad)" />
+
+  <!-- Background Grid -->
+  <path d="M 0 40 L 800 40 M 0 80 L 800 80 M 0 120 L 800 120 M 0 160 L 800 160 M 100 0 L 100 200 M 200 0 L 200 200 M 300 0 L 300 200 M 400 0 L 400 200 M 500 0 L 500 200 M 600 0 L 600 200 M 700 0 L 700 200" class="bg-grid" />
+
+  <!-- Animated Connections -->
+  <line x1="80" y1="40" x2="220" y2="160" class="connection" />
+  <line x1="220" y1="160" x2="380" y2="80" class="connection" />
+  <line x1="380" y1="80" x2="520" y2="150" class="connection" />
+  <line x1="520" y1="150" x2="720" y2="50" class="connection" />
+
+  <!-- Animated Nodes -->
+  <circle cx="80" cy="40" r="8" class="node" />
+  <circle cx="220" cy="160" r="12" class="node-delayed" />
+  <circle cx="380" cy="80" r="9" class="node" />
+  <circle cx="520" cy="150" r="14" class="node-delayed" />
+  <circle cx="720" cy="50" r="8" class="node" />
+
+  <!-- Title & Subtitle -->
+  <text x="50%" y="105" text-anchor="middle" class="title-text">AWESOME CROSS-ENTROPY</text>
+  <text x="50%" y="140" text-anchor="middle" class="subtitle-text">Foundations, Progressions, &amp; Loss Variants</text>
+</svg>

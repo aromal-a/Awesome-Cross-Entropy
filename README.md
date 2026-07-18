@@ -1,5 +1,10 @@
-# Awesome-Cross-Entropy
-## Cross-Entropy in AI: Mathematical Foundations, Progression, & Variants
+# 🧠 Awesome Cross-Entropy
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Cross-Entropy Banner" width="100%">
+</p>
+
+## 📈 Cross-Entropy in AI: Mathematical Foundations, Progression, & Variants
 
 **Cross-Entropy** is the foundational post-architectural optimization objective, loss function, and statistical measure underpining modern classification and generative artificial intelligence networks [INDEX: 15, 22]. Derived from information theory, Cross-Entropy quantifies the absolute structural distance between two probability distributions: the true targets ($P$) and the model's predicted logits ($\hat{P}$). 
 
@@ -7,7 +12,7 @@ In deep learning loops, an unconditional classification pass or causal next-toke
 
 ---
 
-## 1. Mathematical Formulation
+## 🧮 1. Mathematical Formulation
 
 The standard Cross-Entropy loss converts discrete multi-class target labels and continuous raw network logits into a single scalar risk parameter using logarithmic probability scaling.
 
@@ -19,7 +24,7 @@ The standard Cross-Entropy loss converts discrete multi-class target labels and 
 
 ---
 
-## 2. The Macro Chronological Evolution
+## ⏳ 2. The Macro Chronological Evolution
 
 The implementation of error-driven maximization has transitioned from basic binary classifications to multi-class vocabulary gates, noise-approximated shortcuts, and hardware-fused online sequence tokenizations.
 
@@ -41,7 +46,7 @@ flowchart LR
 
 ---
 
-## 3. Core Functional & Algorithmic Loss Variants
+## 🧬 3. Core Functional & Algorithmic Loss Variants
 
 The Cross-Entropy lineage features highly specialized mathematical variations engineered to manage data imbalances, regularize overconfidence, and decouple sample weights.
 
@@ -54,7 +59,7 @@ The Cross-Entropy lineage features highly specialized mathematical variations en
 
 ---
 
-## 4. Production Engineering Challenges & Cluster Solutions
+## ⚙️ 4. Production Engineering Challenges & Cluster Solutions
 
 Scaling cross-entropy loss matrices across multi-node distributed foundation training setups introduces critical numerical stability boundaries and memory bus constraints [INDEX: 15, 22].
 
@@ -65,7 +70,7 @@ Scaling cross-entropy loss matrices across multi-node distributed foundation tra
 
 ---
 
-## 5. Frontier Real-World AI Industrial Applications
+## 🚀 5. Frontier Real-World AI Industrial Applications
 
 | Concept | Description | Year | First Used Paper |
 | :--- | :--- | :--- | :--- |
@@ -75,7 +80,7 @@ Scaling cross-entropy loss matrices across multi-node distributed foundation tra
 
 ---
 
-## References
+## 📚 References
 1. Vaswani, A., et al. (2017). Attention is all you need: Foundational transformer matrix blocks. *Advances in Neural Information Processing Systems (NeurIPS)*, 30 [INDEX: 1].
 2. Devlin, J., et al. (2018). BERT: Pre-training of deep bidirectional transformers via masked language modeling cross-entropy steps. *arXiv preprint arXiv:1810.04805* [INDEX: 1].
 3. Lin, T. Y., et al. (2017). Focal loss for dense object detection. *Proceedings of the IEEE International Conference on Computer Vision (ICCV)*, 2980-2988.
