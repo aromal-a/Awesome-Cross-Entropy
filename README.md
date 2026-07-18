@@ -33,7 +33,10 @@ The implementation of error-driven maximization has transitioned from basic bina
 
 
 ```mermaid
-[Binary Logistic Loss (1950s)] ───> [Categorical Cross-Entropy (BERT/GPT)] ───> [Noise-Contrastive Shortcuts (Word2Vec)] ───> [Fused Online Token Loops (Present)](Rigid Multi-Class Scaling Walls)     (Prohibitive Global Denominator Sums)         (Linear O(1) Vocabulary Reductions)          ( Register-Fused Cache De-allocations )
+flowchart LR
+    A["Binary Logistic Loss (1950s)<br>(Rigid Multi-Class Scaling Walls)"] --> B["Categorical Cross-Entropy (BERT/GPT)<br>(Prohibitive Global Denominator Sums)"]
+    B --> C["Noise-Contrastive Shortcuts (Word2Vec)<br>(Linear O(1) Vocabulary Reductions)"]
+    C --> D["Fused Online Token Loops (Present)<br>(Register-Fused Cache De-allocations)"]
 ```
 
 
