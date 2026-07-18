@@ -100,3 +100,14 @@ Scaling cross-entropy loss matrices across multi-node distributed foundation tra
 To advance this section of your repository, structural loss blueprint, or distributed deployment MLOps pipeline, consider pursuing these adjacent development pathways:
 * Build a **Python code snippet using PyTorch** illustrating how to construct an automated token-masked Categorical Cross-Entropy function from scratch, incorporating the Log-Sum-Exp numerical stability trick.
 
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Cross-Entropy&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Cross-Entropy&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Cross-Entropy&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Cross-Entropy&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
+
